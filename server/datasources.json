@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "nodidb": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "nodi",
+    "password": "",
+    "name": "nodidb",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

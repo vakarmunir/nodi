@@ -1,0 +1,86 @@
+{
+  "name": "nodi_posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "post_date": {
+      "type": "date"
+    },
+    "post_author": {
+      "type": "number"
+    },
+    "post_date_gmt": {
+      "type": "date"
+    },
+    "post_content": {
+      "type": "string"
+    },
+    "post_title": {
+      "type": "string"
+    },
+    "post_excerpt": {
+      "type": "string"
+    },
+    "post_status": {
+      "type": "string"
+    },
+    "comment_status": {
+      "type": "string"
+    },
+    "ping_status": {
+      "type": "string"
+    },
+    "post_password": {
+      "type": "string"
+    },
+    "post_name": {
+      "type": "string"
+    },
+    "to_ping": {
+      "type": "string"
+    },
+    "pinged": {
+      "type": "string"
+    },
+    "post_modified": {
+      "type": "date"
+    },
+    "post_modified_gmt": {
+      "type": "date"
+    },
+    "post_content_filtered": {
+      "type": "string"
+    },
+    "post_parent": {
+      "type": "number"
+    },
+    "guid": {
+      "type": "string"
+    },
+    "menu_order": {
+      "type": "number"
+    },
+    "post_type": {
+      "type": "string"
+    },
+    "post_mime_type": {
+      "type": "string"
+    },
+    "comment_count": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "nodiPostmeta": {
+      "type": "hasMany",
+      "model": "nodi_postmeta",
+      "foreignKey": "post_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

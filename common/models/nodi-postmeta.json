@@ -1,0 +1,28 @@
+{
+  "name": "nodi_postmeta",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "meta_id": {
+      "type": "number",
+      "required": true
+    },
+    "post_id": {
+      "type": "number",
+      "required": true
+    },
+    "meta_key": {
+      "type": "string"
+    },
+    "meta_value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
